@@ -632,6 +632,7 @@ body {
   }
   .header-section-mobile .mobile-magic h1 {
     font-size: 1.2rem;
+    text-shadow: 7px 7px 7px #000;
   }
   .header-section-mobile .menu-btn {
     display: block;

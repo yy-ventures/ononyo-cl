@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+.project-new-section {
+  height: 800px;
+  position: relative;
+}
+
+.project-new-section::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ced7dd;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.project-new-section .navigation-section {
+  position: relative;
+  width: 100%;
+  padding: 5rem 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 10000;
+}
+
+.project-new-section .navigation-section .navigation-container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.project-new-section .navigation-section .navigation-container .navigation-menu a {
+  text-decoration: none;
+  color: #302f30;
+  font-family: "Roboto", sans-serif;
+  margin-left: 2rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.project-new-section .navigation-section .navigation-container .navigation-menu a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #f57f34;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.project-new-section .navigation-section .navigation-container .navigation-menu a:first-child {
+  margin-left: 0;
+}
+
+.project-new-section .navigation-section .navigation-container .navigation-menu a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.project-new-section .navigation-section .navigation-container .navigation-menu .active {
+  border-bottom: 3px solid #f57f34;
+}
+
+.project-new-section .navigation-section .navigation-container .navigation-logo img {
+  height: 80px;
+}
+
+.project-new-section .navigation-section .close-menu {
+  position: absolute;
+  font-size: 24px;
+  color: #302f30;
+  top: 5%;
+  left: 5%;
+  cursor: pointer;
+  display: none;
+}
+
+.project-new-section .menu-btn {
+  font-size: 24px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+  display: none;
+}
+
+.project-new-section .mobile-logo {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  display: none;
+}
+
+.project-new-section .mobile-logo img {
+  height: 50px;
+}
+
+.project-new-section .project-new-header-image {
+  height: 500px;
+  position: relative;
+}
+
+.project-new-section .project-new-header-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 40px solid rgba(139, 167, 73, 0.75);
+}
+
+.project-new-section .project-new-header-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project-new-section .project-new-header-content {
+  padding: 0 10% 10% 10%;
+}
+
+.project-new-section .project-new-header-content h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #8ba749;
+}
+
+.project-new-section .project-new-header-content p {
+  color: #302f30;
+  margin-top: 2rem;
+}
+
+.projects-new-slider {
+  height: 1000px;
+  position: relative;
+}
+
+.projects-new-slider::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ced7dd;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.projects-new-slider .circle-slider-container {
+  background-image: url("../assets/blueprint-deco/construction_opacity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.projects-new-slider .circle-slider-container img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 50%;
+}
+
+.projects-new-slider .projects-slider-container .projects-slider-container-header h2 {
+  color: #a5452c;
+  font-weight: 900;
+  font-size: 4em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.projects-new-slider .projects-slider-container .projects-slider-container-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-bottom: 5px solid #a5452c;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.projects-new-slider .projects-slider-container .projects-slider-container-header h5 {
+  color: #707070;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.projects-new-slider .projects-slider-container .projects-slider-container-body {
+  height: 400px;
+  background-color: #efd8bc;
+  position: relative;
+}
+
+.projects-new-slider .projects-slider-container .projects-slider-container-body img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects-new-slider .projects-slider-container .projects-slider-container-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 25px solid #F57F34;
+  opacity: 0.5;
+}
+
+.projects-new-slider .projects-slider-container .projects-slider-container-footer {
+  padding: 10%;
+}
+
+.projects-new-slider .projects-slider-container .projects-slider-container-footer h5 {
+  font-size: 2em;
+  color: #707070;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.projects-new-slider .projects-slider-container .projects-slider-container-footer p {
+  font-size: 1.1rem;
+  color: #707070;
+  margin-top: 1.5rem;
+  font-weight: 400;
+}
+
+.slider-small {
+  height: 500px;
+  background-color: #efd8bc;
+  position: relative;
+}
+
+.slider-small .slider-div p {
+  color: #777;
+  padding: 1em;
+  font-weight: bold;
+}
+
+.slider-small .swiper-button-prev {
+  top: 50%;
+  font-weight: 900;
+  -webkit-transform: scale(0.8) translateY(100%) translateX(600%);
+          transform: scale(0.8) translateY(100%) translateX(600%);
+  z-index: 100000;
+}
+
+.slider-small .swiper-button-next {
+  top: 50%;
+  font-weight: 900;
+  -webkit-transform: scale(0.8) translateY(100%) translateX(-600%);
+          transform: scale(0.8) translateY(100%) translateX(-600%);
+}
+
+.slider-small .swiper-pagination {
+  bottom: 50%;
+  -webkit-transform: scale(2) translateY(-50%);
+          transform: scale(2) translateY(-50%);
+}
+
+.slider-small .swiper-pagination .swiper-pagination-bullet-active {
+  background: #777 !important;
+}
+
+.slider-small .swiper-pagination .swiper-pagination-bullet {
+  background: none;
+  border: 1px solid #777;
+}
+
+.footer-section {
+  height: 320px;
+  border-top: 15px solid;
+  -o-border-image: linear-gradient(to right, #a5452c 50%, #43572e 50%) 1;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #a5452c), color-stop(50%, #43572e)) 1;
+     border-image: linear-gradient(to right, #a5452c 50%, #43572e 50%) 1;
+  background-color: #f57f34;
+}
+
+.footer-section .footer-content {
+  height: auto;
+  width: 85%;
+  color: #302f30;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.footer-section .footer-content .media-icons a {
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  background-color: #373316;
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.footer-section .footer-content .media-icons a:last-child {
+  margin-right: 0;
+}
+
+.circle {
+  width: Max(20vw, 800px);
+  height: Max(20vw, 800px);
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  counter-reset: circle;
+}
+
+.dot {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  counter-increment: circle;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: -50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.dot:nth-of-type(1) {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  outline: 1px solid #777;
+  outline-offset: -0.6em;
+}
+
+.dot:nth-of-type(2) {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.dot:nth-of-type(3) {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .project-new-section {
+    height: auto;
+    background-color: #ffffff;
+    background-image: url("../assets/blueprint-deco/about-construction-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .project-new-section::after {
+    content: "";
+    width: 0;
+  }
+  .project-new-section .menu-btn {
+    display: block;
+  }
+  .project-new-section .header-content-container {
+    padding-top: 8rem;
+  }
+  .project-new-section .header-content-container h1 {
+    font-size: 3rem;
+  }
+  .project-new-section .mobile-logo {
+    display: block;
+  }
+  .project-new-section .navigation-section {
+    background-color: #ffffff;
+    background-image: url("../assets/blueprint-deco/about-construction-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    z-index: 500;
+  }
+  .project-new-section .navigation-section .navigation-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-new-section .navigation-section .navigation-container .navigation-menu {
+    text-align: center;
+    margin-left: -2rem;
+  }
+  .project-new-section .navigation-section .navigation-container .navigation-menu a {
+    display: block;
+    color: #707070;
+    margin-top: 2rem;
+  }
+  .project-new-section .navigation-section .navigation-container .navigation-menu a:first-child {
+    margin-left: 2rem;
+  }
+  .project-new-section .navigation-section .navigation-container .navigation-logo img {
+    height: 70px;
+  }
+  .project-new-section .navigation-section .close-menu {
+    display: block;
+  }
+  .project-new-section .project-new-header-image {
+    height: 400px;
+  }
+  .project-new-section .project-new-header-content {
+    margin-top: 10rem;
+  }
+  .projects-new-slider {
+    height: auto;
+    padding: 0;
+  }
+  .projects-new-slider .circle-slider-container {
+    overflow: hidden;
+  }
+  .projects-new-slider .projects-slider-container {
+    margin-top: -20rem;
+  }
+  .projects-new-slider .projects-slider-container .projects-slider-container-footer {
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  .slider-small {
+    height: auto;
+    padding: 1rem 0 3rem 0;
+    margin-top: 50rem;
+  }
+  .slider-small .small-slider-container {
+    width: 100% !important;
+  }
+  .footer-section {
+    height: 100%;
+  }
+  .footer-section .footer-section-image {
+    height: 300px;
+  }
+  .footer-section .footer-content {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+}
+/*# sourceMappingURL=projectExtra.css.map */

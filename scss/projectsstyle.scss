@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap");
+
+$font-collection: "Montserrat", "Roboto", "Courier New", Courier, monospace;
+
+$primaryColor: #f57f34;
+$text: #707070;
+$darkText: #302f30;
+$white: #ffffff;
+$lightOrange: #ff9b48;
+$green: #8ba749;
+$lightGreen: #8ea6a2;
+$soil: #db7837;
+$soil-dark: rgba(165,69,44,1);
+body {
+  overflow-x: hidden;
+}
+
+// .row > * {
+//     padding: 0;
+// }
+
+    .navigation-container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .navigation-menu{
+            a{
+                text-decoration: none;
+                color: $darkText;
+                font-family: 'Roboto', sans-serif;
+                margin-left: 2rem;
+                font-weight: 400;
+                font-size: 1.1rem;
+                position: relative;
+                padding: 1rem 0;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 3px;
+                    background-color: #F57F34;
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    // transform-origin: left;
+                    transition: transform 0.3s ease-in;
+                }
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:hover::after{
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+            }
+            .active{
+              border-bottom: 3px solid #F57F34;
+          }
+        }
+        .navigation-logo{
+            img{
+                height: 80px;
+            }
+        }
+    }
+    .close-menu{
+        position: absolute;
+        font-size: 24px;
+        color: #707070;
+        top: 5%;
+        left: 5%;
+        cursor: pointer;
+        display: none;
+    }
+
+.menu-btn{
+    font-size: 24px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+    display: none;
+}
+.mobile-logo{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    display: none;
+    img{
+        height: 50px;
+    }
+}
+  .header-content-container {
+    width: 80%;
+    margin: 0 auto;
+    h1 {
+      font-size: 5rem;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+  }
+
+
+.projects-description {
+  height: auto;
+  color: #707070;
+  overflow: hidden;
+  .about-us-row {
+    height: 800px;
+  }
+  .about-us-left {
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    .our-project-image {
+      height: 80%;
+      background-image: url("../assets/project-construction/project-construction.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      top: 10%;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 40px solid rgba(139, 167, 73, 0.75);
+        border-left: 52px solid rgba(139, 167, 73, 0.75);
+      }
+    }
+  }
+  .about-us-right {
+    height: 100%;
+    background-color: #ced7dd;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    p {
+      font-family: $font-collection;
+      font-size: 1rem;
+    }
+    p ~ p {
+      margin-top: 0.5rem;
+    }
+    h1 {
+      padding-top: 2em;
+      font-family: $font-collection;
+      color: #8ba749;
+      font-size: 3rem;
+      font-weight: 900;
+    }
+  }
+}
+
+.projects-carousel {
+  background: linear-gradient(90deg, #fff 50%, #ced7dd 50%);
+  height: auto;
+  font-family: $font-collection;
+
+  .row > * {
+    padding : 0;
+  }
+  h2 {
+    padding-top: 2em;
+    color: #8ba749;
+    position: relative;
+    font-weight: 900;
+    &:before {
+      content: "";
+      border-bottom: 5px solid #8ba749;
+      width: 8%;
+      display: inline-block;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      margin-right: 0.3em;
+    }
+  }
+    .circular-carousel {
+      
+      background: url("../assets/blueprint-deco/second_bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: -100%;
+      position: relative;
+            #decoration {
+              position: absolute;
+              height: 50%;
+        top: 50%;
+              left: 0;
+              transform: translate(-40%,-50%);
+            }
+            #circle {
+              position: absolute;
+              height: 65%;
+              top: 50%;
+              left: -80%;
+              transform: translate(50%, -50%);
+            }
+      
+    }
+    .slider-container {
+      height: 100%;
+      h3 {
+        padding-top: 2em;
+        font-family: $font-collection;
+        color: $soil-dark;
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+      .slider-div {
+        width: 100%;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 40px solid rgba(245, 127, 52, 0.75);
+        }
+        img {
+          width: 100%;
+          height: 60vh;
+          object-fit: cover;
+        }
+      }
+      h4 {
+        padding: 2em;
+      }
+      p {
+        padding: 2em
+      }
+    }
+  }
+
+
+@media screen and (max-width: 900px) {
+  .projects-description{
+      height: auto;
+      padding: 5rem 0;
+      .mobile-logo{
+          display: block;
+      }
+      .menu-btn{
+          display: block;
+      }
+      .navigation-section{
+          background-color: $primaryColor;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          transform: translateX(-100%);
+          z-index: 500;
+          .navigation-container{
+              flex-direction: column-reverse;
+              justify-content: center;
+              .navigation-menu{
+                  text-align: center;
+                  a{
+                      display: block;
+                      color: $text;
+                      &:first-child{
+                          margin-left: 2rem;
+                      }
+                  }
+              }
+              .navigation-logo{
+                  img{
+                      height: 50px;
+                  }
+              }
+          }
+          .close-menu{
+              display: block;
+          }
+      }
+  }
+}

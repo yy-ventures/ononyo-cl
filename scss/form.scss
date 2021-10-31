@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$font-collection: "Montserrat", "Roboto", "Courier New", Courier, monospace; 
+$primaryColor: #F57F34;
+$text: #707070;
+$darkText: #302F30;
+$white: #ffffff;
+$lightOrange: #FF9B48;
+$green: #8BA749;
+$lightGreen : #8EA6A2;
+$soil: #DB7837;
+
+
+body {
+  overflow-x: hidden;
+}
+
+.contact-section{
+    .navigation-section{
+        position: relative;
+        width: 100%;
+        padding: 5rem 0;
+        transition: 0.3s;
+        z-index: 10000;
+        .navigation-container{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            .navigation-menu{
+                a{
+                    text-decoration: none;
+                    color: $darkText;
+                    font-family: 'Roboto', sans-serif;
+                    margin-left: 2rem;
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                    position: relative;
+                    padding: 1rem 0;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 3px;
+                        background-color: #F57F34;
+                        width: 100%;
+                        left: 0;
+                        bottom: 0;
+                        transform: scaleX(0);
+                        transform-origin: right;
+                        // transform-origin: left;
+                        transition: transform 0.3s ease-in;
+                    }
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:hover::after{
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+                }
+                .active{
+                    border-bottom: 3px solid #F57F34;
+                }
+            }
+            .navigation-logo{
+                img{
+                    height: 80px;
+                }
+            }
+        }
+        .close-menu{
+            position: absolute;
+            font-size: 24px;
+            color: $darkText;
+            top: 5%;
+            left: 5%;
+            cursor: pointer;
+            display: none;
+        }
+    }
+    
+    .menu-btn{
+        font-size: 24px;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        cursor: pointer;
+        display: none;
+    }
+    .mobile-logo{
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        display: none;
+        img{
+            height: 50px;
+        }
+    }
+    .form-collection{
+        height: auto;
+        padding: 5rem 0;
+        background-image: url("../assets/blueprint-deco/form_construction.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .form-inputs{
+            width: 45%;
+            height: auto;
+            h2{
+                color: $lightGreen;
+                text-transform: uppercase;
+                font-size: 3rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 900;
+            }
+            label{
+                font-size: 1rem;
+                color: $soil;
+                text-transform: capitalize;
+                font-weight: bold;
+            }
+            input, textarea{
+                outline: none;
+                border: none;
+                border-bottom: 2px solid #999999;
+                padding: 12px 16px;
+                width: 100%;
+                margin-top: 1rem;
+                color: $text;
+                background-color: inherit;
+            }
+            button{
+                outline: none;
+                border: none;
+                padding: 12px 36px;
+                color: $white;
+                background-color: $lightGreen;
+                font-size: 1.2rem;
+                font-weight: bold;
+                font-family: "Roboto", sans-serif;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+.footer-section{
+    height: 320px;
+    border-top: 15px solid;
+    border-image: linear-gradient(to right, #A5452C 50%, #43572E 50%) 1;
+    background-color: $primaryColor;
+    .footer-content{
+        height: auto;
+        width: 85%;
+        color: $darkText;
+        font-weight: 600;
+        font-size: 14px;
+        .media-icons{
+            a{
+                text-decoration: none;
+                display: inline-flex;
+                width: 30px;
+                height: 30px;
+                background-color: #373316;
+                color: #ffffff;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin-right: 0.5rem;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact-section{
+        height: auto;
+        padding: 5rem 0;
+        .mobile-logo{
+            display: block;
+        }
+        .menu-btn{
+            display: block;
+        }
+        .navigation-section{
+            background-color: $white;
+            background-image: url("../assets/blueprint-deco/about-construction-2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform: translateX(-100%);
+            z-index: 500;
+            .navigation-container{
+                flex-direction: column-reverse;
+                justify-content: center;
+                .navigation-menu{
+                    text-align: center;
+                    margin-left: -2rem;
+                    a{
+                        display: block;
+                        color: $text;
+                        margin-top: 2rem;
+                        &:first-child{
+                            margin-left: 2rem;
+                        }
+                    }
+                }
+                .navigation-logo{
+                    img{
+                        height: 70px;
+                    }
+                }
+            }
+            .close-menu{
+                display: block;
+            }
+        }
+        .form-collection{
+            background-image: url("../assets/blueprint-deco/about-construction-2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            .form-inputs{
+                width: 100%;
+            }
+        }
+    }
+    .footer-section{
+        height: 100%;
+        .footer-section-image{
+            height: 300px;
+        }
+        .footer-content{
+            height: auto;
+            padding: 2rem 1rem;
+        }
+    }
+}

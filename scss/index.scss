@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$primaryColor: #F57F34;
+$text: #707070;
+$darkText: #302F30;
+$white: #ffffff;
+$lightOrange: #FF9B48;
+$green: #8BA749;
+$lightGreen : #8EA6A2;
+$soil: #DB7837;
+
+body{overflow-x: hidden;
+}
+
+.header-section{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/header/image-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .magic{
+        z-index: 5;
+        position: absolute;
+        top: 0;
+        left: calc(50% - 10rem);
+        width: 50%;
+        height: 100%;
+        background: url('../assets//header/move-img.png') 50% 50% no-repeat fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        h1 {
+            font-size: 3.5em;
+            text-transform: uppercase;
+            color: #fff;
+            z-index: 10;
+            padding: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            text-shadow: 10px 10px 10px #000;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+    .navigation-section{
+        position: relative;
+        width: 100%;
+        padding: 5rem 0;
+        transition: 0.3s;
+        z-index: 10000;
+        .navigation-container{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            .navigation-menu{
+                a{
+                    text-decoration: none;
+                    color: $darkText;
+                    font-family: 'Roboto', sans-serif;
+                    margin-left: 2rem;
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                    position: relative;
+                    padding: 1rem 0;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 3px;
+                        background-color: #F57F34;
+                        width: 100%;
+                        left: 0;
+                        bottom: 0;
+                        transform: scaleX(0);
+                        transform-origin: right;
+                        // transform-origin: left;
+                        transition: transform 0.3s ease-in;
+                    }
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:hover::after{
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+                }
+                .active{
+                    border-bottom: 3px solid #F57F34;
+                }
+            }
+            .navigation-logo{
+                img{
+                    height: 80px;
+                }
+            }
+        }
+        .close-menu{
+            position: absolute;
+            font-size: 24px;
+            color: $darkText;
+            top: 5%;
+            left: 5%;
+            cursor: pointer;
+            display: none;
+        }
+    }
+    
+    .menu-btn{
+        font-size: 24px;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        cursor: pointer;
+        display: none;
+        color: $darkText;
+    }
+    .mobile-logo{
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        display: none;
+        img{
+            height: 50px;
+        }
+    }
+}
+.header-section-mobile{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/header/image-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .mobile-magic{
+        z-index: 5;
+        position: absolute;
+        top: 0;
+        left: calc(50% - 10rem);
+        width: 50%;
+        height: 100%;
+        background: url('../assets//header/move-img.png') 50% 50% no-repeat fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        // animation: animate 4s infinite alternate-reverse;
+        h1 {
+            font-size: 3.5em;
+            text-transform: uppercase;
+            color: #fff;
+            z-index: 10;
+            padding: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            text-shadow: 10px 10px 10px #000;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+    .navigation-section{
+        position: relative;
+        width: 100%;
+        padding: 5rem 0;
+        transition: 0.3s;
+        z-index: 10000;
+        .navigation-container{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            .navigation-menu{
+                a{
+                    text-decoration: none;
+                    color: $darkText;
+                    font-family: 'Roboto', sans-serif;
+                    margin-left: 2rem;
+                    margin-top: 1.5rem;
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                    position: relative;
+                    padding: 1rem 0;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 3px;
+                        background-color: #F57F34;
+                        width: 100%;
+                        left: 0;
+                        bottom: 0;
+                        transform: scaleX(0);
+                        transform-origin: right;
+                        // transform-origin: left;
+                        transition: transform 0.3s ease-in;
+                    }
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:hover::after{
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+                }
+                .active{
+                    border-bottom: 3px solid #F57F34;
+                }
+            }
+            .navigation-logo{
+                img{
+                    height: 80px;
+                }
+            }
+        }
+        .close-menu{
+            position: absolute;
+            font-size: 24px;
+            color: $darkText;
+            top: 5%;
+            left: 5%;
+            cursor: pointer;
+            display: none;
+        }
+    }
+    
+    .menu-btn{
+        font-size: 24px;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        cursor: pointer;
+        display: none;
+    }
+    .mobile-logo{
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        display: none;
+        img{
+            height: 50px;
+        }
+    }
+}
+
+
+.about-section{
+    height: 700px;
+    .about-section-container{
+        height: 100%;
+        .about-section-list{
+            .about-section-content{
+                border-top: 3px solid $primaryColor;
+                p{
+                    color: $text;
+                }
+            }
+        }
+    }
+    .about-section-construction{
+        height: 100%;
+        background-image: url("../assets/blueprint-deco/construction-1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.roots-values-section{
+    height: 800px;
+    .roots-values-section-container{
+        height: 100%;
+        .roots-values-section-content{
+            background: $lightOrange;
+            .roots-values-section-listings{
+                width: 100%;
+                .roots-values-section-listings-value{
+                    border-top: 3px solid $darkText;
+                    padding-top: 2rem;
+                    color: $darkText;
+                    h2{
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        font-size: 3rem;
+                    }
+                    ul{
+                        margin-top: 2rem;
+                        li{
+                            margin-top: 0.5rem;
+                            font-size: 1.1rem;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+        .roots-values-construction{
+            height: 100%;
+            background: url("../assets/project-construction/construction-2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+.our-projects-section{
+    height: 400px;
+    .our-project-image{
+        background-image: url("../assets/project-construction/construction-black-3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 40px solid rgba(139, 167, 73, 0.75);
+            border-left: 52px solid rgba(139, 167, 73, 0.75);
+        }
+    }
+    .project-details-content{
+        height: 70%;
+        width: 70%;
+        .project-details-content-data{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            h2{
+                font-weight: 900;
+                text-transform: uppercase;
+                font-size: 3rem;
+                color: $darkText;
+            }
+            a{
+                color: $darkText;
+                text-decoration: none;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+.project-building-section{
+    height: 800px;
+    .project-building-image{
+        background-image: url("../assets/blueprint-deco/construction-4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 85%;
+            border-bottom: 5px solid $soil;
+        }
+    }
+    .project-building-details{
+        .building-details-header{
+            height: 60%;
+            .building-details-header-left{
+                background-image: url("../assets/project-construction/Nishorgo-1.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 40px solid rgba(245, 127, 52, 0.75);
+                }
+            }
+            .building-details-header-right{
+                background-image: url("../assets/project-construction/construction-5.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 40px solid rgba(142, 166, 162, 0.75);
+                }
+            }
+        }
+        .building-details-footer{
+            height: 40%;
+            background-image: url("../assets/construction-6.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            p{
+                width: 65%;
+                color: $darkText;
+            }
+        }
+    }
+}
+.our-services-section{
+    height: auto;
+    padding: 8rem 1rem;
+    .our-services-section-container{
+        height: 80%;
+        width: 90%;
+        .our-services-section-header{
+            padding: 1rem 0;
+            width: 80%;
+            margin: 0 auto;
+            h2{
+                font-weight: 900;
+                text-transform: uppercase;
+                font-size: 3rem;
+                color: $soil;
+            }
+        }
+        ul{
+            margin-top: 2rem;
+            padding-left: 0;
+            li{
+                list-style-type: none;
+                float: left;
+                width: 18%;
+                margin-left: 2%;
+                transition: 1s;
+                cursor: pointer;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:hover{
+                    transform: rotate(10deg);
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+.footer-section{
+    height: 320px;
+    border-top: 15px solid;
+    border-image: linear-gradient(to right, #A5452C 50%, #43572E 50%) 1;
+    background-color: $primaryColor;
+    .footer-content{
+        height: auto;
+        width: 85%;
+        color: $darkText;
+        font-weight: 600;
+        font-size: 14px;
+        .media-icons{
+            a{
+                text-decoration: none;
+                display: inline-flex;
+                width: 30px;
+                height: 30px;
+                background-color: #373316;
+                color: #ffffff;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin-right: 0.5rem;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .header-section{
+        display: none;
+        .menu-btn{
+            display: block;
+        }
+        .header-content-container{
+            padding-top: 8rem;
+            h1{
+                font-size: 3rem;
+            }
+        }
+        .mobile-logo{
+            display: block;
+        }
+        .navigation-section{
+            background-color: $primaryColor;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            transform: translateX(100%);
+            z-index: 500;
+            .navigation-container{
+                flex-direction: column-reverse;
+                justify-content: center;
+                .navigation-menu{
+                    text-align: center;
+                    a{
+                        display: block;
+                        color: $text;
+                        &:first-child{
+                            margin-left: 2rem;
+                        }
+                    }
+                }
+                .navigation-logo{
+                    img{
+                        height: 50px;
+                    }
+                }
+            }
+            .close-menu{
+                display: block;
+            }
+        }
+    }
+    .header-section-mobile{
+        display: block;
+        height: 500px;
+        .mobile-magic{
+            z-index: 5;
+            h1{
+                font-size: 1.2rem;
+            }
+        }
+        .menu-btn{
+            display: block;
+            z-index: 10000;
+        }
+        .header-content-container{
+            padding-top: 8rem;
+            h1{
+                font-size: 2rem;
+            }
+        }
+        .mobile-logo{
+            display: block;
+            z-index: 1000;
+        }
+        .navigation-section{
+            background-color: $white;
+            background-image: url("../assets/blueprint-deco/about-construction-2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 165%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            transform: translateX(100%);
+            z-index: 10000;
+            .navigation-container{
+                flex-direction: column-reverse;
+                justify-content: center;
+                .navigation-menu{
+                    text-align: center;
+                    margin-left: -2rem;
+                    a{
+                        display: block;
+                        color: $text;
+                        margin-top: 2rem;
+                        &:first-child{
+                            margin-left: 2rem;
+                        }
+                    }
+                }
+                .navigation-logo{
+                    img{
+                        height: 70px;
+                    }
+                }
+            }
+            .close-menu{
+                display: block;
+            }
+        }
+    }
+    .about-section{
+        .about-section-container{
+            .about-section-list{
+                padding: 2rem 1rem;
+                font-size: 15px;
+            }
+            .about-section-construction{
+                height: 400px;
+            }
+        }
+    }
+    .roots-values-section{
+        .roots-values-section-container{
+            .roots-values-section-content{
+                height: 400px;
+                padding: 1rem 3rem;
+            }
+            .roots-values-construction{
+                height: 400px;
+                margin-top: 5rem;
+            }
+        }
+    }
+    .our-projects-section{
+        height: auto;
+        .our-project-image{
+            height: 400px;
+        }
+        .our-project-details{
+            height: 400px;
+            .project-details-content{
+                .project-details-content-data{
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .project-building-section{
+        height: auto;
+        .project-building-image{
+            height: 400px;
+            background-color: aquamarine;
+            position: relative;
+            &::after{
+                content: "";
+                border-bottom: 0;
+                top: 0;
+                left: 0;
+                border-top: 5px solid $soil;;
+                position: absolute;
+            }
+        }
+        .project-building-details{
+            .building-details-header{
+                .building-details-header-left{
+                    height: 400px;
+                }
+                .building-details-header-right{
+                    height: 400px;
+                }
+            }
+            .building-details-footer{
+                height: 400px;
+                padding-left: 2rem;
+                padding-top: 2rem;
+                p{
+                    width: 100%;
+                    padding: 5% 10% 5% 5%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .our-services-section{
+        height: auto;
+        padding: 2rem 1rem;
+        background-color: #f2f2f2;
+        .our-services-section-container{
+            ul{
+                li{
+                    float: none;
+                    width: 100%;
+                    margin-top: 1rem;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .footer-section{
+        height: 100%;
+        .footer-section-image{
+            height: 300px;
+        }
+        .footer-content{
+            height: auto;
+            padding: 2rem 1rem;
+        }
+    }
+}

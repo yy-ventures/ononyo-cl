@@ -1,0 +1,775 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+.header-section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/header/image-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-section .magic {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 10rem);
+  width: 50%;
+  height: 100%;
+  background: url("../assets//header/move-img.png") 50% 50% no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.header-section .magic h1 {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 10;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-shadow: 10px 10px 10px #000;
+  bottom: 0;
+  position: absolute;
+}
+
+.header-section .navigation-section {
+  position: relative;
+  width: 100%;
+  padding: 5rem 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 10000;
+}
+
+.header-section .navigation-section .navigation-container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header-section .navigation-section .navigation-container .navigation-menu a {
+  text-decoration: none;
+  color: #302F30;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 2rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.header-section .navigation-section .navigation-container .navigation-menu a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #F57F34;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.header-section .navigation-section .navigation-container .navigation-menu a:first-child {
+  margin-left: 0;
+}
+
+.header-section .navigation-section .navigation-container .navigation-menu a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.header-section .navigation-section .navigation-container .navigation-menu .active {
+  border-bottom: 3px solid #F57F34;
+}
+
+.header-section .navigation-section .navigation-container .navigation-logo img {
+  height: 80px;
+}
+
+.header-section .navigation-section .close-menu {
+  position: absolute;
+  font-size: 24px;
+  color: #302F30;
+  top: 5%;
+  left: 5%;
+  cursor: pointer;
+  display: none;
+}
+
+.header-section .menu-btn {
+  font-size: 24px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+  display: none;
+  color: #302F30;
+}
+
+.header-section .mobile-logo {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  display: none;
+}
+
+.header-section .mobile-logo img {
+  height: 50px;
+}
+
+.header-section-mobile {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/header/image-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-section-mobile .mobile-magic {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 10rem);
+  width: 50%;
+  height: 100%;
+  background: url("../assets//header/move-img.png") 50% 50% no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.header-section-mobile .mobile-magic h1 {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 10;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-shadow: 10px 10px 10px #000;
+  bottom: 0;
+  position: absolute;
+}
+
+.header-section-mobile .navigation-section {
+  position: relative;
+  width: 100%;
+  padding: 5rem 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 10000;
+}
+
+.header-section-mobile .navigation-section .navigation-container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header-section-mobile .navigation-section .navigation-container .navigation-menu a {
+  text-decoration: none;
+  color: #302F30;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.header-section-mobile .navigation-section .navigation-container .navigation-menu a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #F57F34;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.header-section-mobile .navigation-section .navigation-container .navigation-menu a:first-child {
+  margin-left: 0;
+}
+
+.header-section-mobile .navigation-section .navigation-container .navigation-menu a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.header-section-mobile .navigation-section .navigation-container .navigation-menu .active {
+  border-bottom: 3px solid #F57F34;
+}
+
+.header-section-mobile .navigation-section .navigation-container .navigation-logo img {
+  height: 80px;
+}
+
+.header-section-mobile .navigation-section .close-menu {
+  position: absolute;
+  font-size: 24px;
+  color: #302F30;
+  top: 5%;
+  left: 5%;
+  cursor: pointer;
+  display: none;
+}
+
+.header-section-mobile .menu-btn {
+  font-size: 24px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+  display: none;
+}
+
+.header-section-mobile .mobile-logo {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  display: none;
+}
+
+.header-section-mobile .mobile-logo img {
+  height: 50px;
+}
+
+.about-section {
+  height: 700px;
+}
+
+.about-section .about-section-container {
+  height: 100%;
+}
+
+.about-section .about-section-container .about-section-list .about-section-content {
+  border-top: 3px solid #F57F34;
+}
+
+.about-section .about-section-container .about-section-list .about-section-content p {
+  color: #707070;
+}
+
+.about-section .about-section-construction {
+  height: 100%;
+  background-image: url("../assets/blueprint-deco/construction-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.roots-values-section {
+  height: 800px;
+}
+
+.roots-values-section .roots-values-section-container {
+  height: 100%;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content {
+  background: #FF9B48;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings {
+  width: 100%;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .roots-values-section-listings-value {
+  border-top: 3px solid #302F30;
+  padding-top: 2rem;
+  color: #302F30;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .roots-values-section-listings-value h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .roots-values-section-listings-value ul {
+  margin-top: 2rem;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .roots-values-section-listings-value ul li {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-construction {
+  height: 100%;
+  background: url("../assets/project-construction/construction-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.our-projects-section {
+  height: 400px;
+}
+
+.our-projects-section .our-project-image {
+  background-image: url("../assets/project-construction/construction-black-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.our-projects-section .our-project-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 40px solid rgba(139, 167, 73, 0.75);
+  border-left: 52px solid rgba(139, 167, 73, 0.75);
+}
+
+.our-projects-section .project-details-content {
+  height: 70%;
+  width: 70%;
+}
+
+.our-projects-section .project-details-content .project-details-content-data {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.our-projects-section .project-details-content .project-details-content-data h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #302F30;
+}
+
+.our-projects-section .project-details-content .project-details-content-data a {
+  color: #302F30;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.project-building-section {
+  height: 800px;
+}
+
+.project-building-section .project-building-image {
+  background-image: url("../assets/blueprint-deco/construction-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+}
+
+.project-building-section .project-building-image::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 85%;
+  border-bottom: 5px solid #DB7837;
+}
+
+.project-building-section .project-building-details .building-details-header {
+  height: 60%;
+}
+
+.project-building-section .project-building-details .building-details-header .building-details-header-left {
+  background-image: url("../assets/project-construction/Nishorgo-1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+}
+
+.project-building-section .project-building-details .building-details-header .building-details-header-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 40px solid rgba(245, 127, 52, 0.75);
+}
+
+.project-building-section .project-building-details .building-details-header .building-details-header-right {
+  background-image: url("../assets/project-construction/construction-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+}
+
+.project-building-section .project-building-details .building-details-header .building-details-header-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 40px solid rgba(142, 166, 162, 0.75);
+}
+
+.project-building-section .project-building-details .building-details-footer {
+  height: 40%;
+  background-image: url("../assets/construction-6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-building-section .project-building-details .building-details-footer p {
+  width: 65%;
+  color: #302F30;
+}
+
+.our-services-section {
+  height: auto;
+  padding: 8rem 1rem;
+}
+
+.our-services-section .our-services-section-container {
+  height: 80%;
+  width: 90%;
+}
+
+.our-services-section .our-services-section-container .our-services-section-header {
+  padding: 1rem 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.our-services-section .our-services-section-container .our-services-section-header h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #DB7837;
+}
+
+.our-services-section .our-services-section-container ul {
+  margin-top: 2rem;
+  padding-left: 0;
+}
+
+.our-services-section .our-services-section-container ul li {
+  list-style-type: none;
+  float: left;
+  width: 18%;
+  margin-left: 2%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.our-services-section .our-services-section-container ul li:first-child {
+  margin-left: 0;
+}
+
+.our-services-section .our-services-section-container ul li:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.our-services-section .our-services-section-container ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer-section {
+  height: 320px;
+  border-top: 15px solid;
+  -o-border-image: linear-gradient(to right, #A5452C 50%, #43572E 50%) 1;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #A5452C), color-stop(50%, #43572E)) 1;
+     border-image: linear-gradient(to right, #A5452C 50%, #43572E 50%) 1;
+  background-color: #F57F34;
+}
+
+.footer-section .footer-content {
+  height: auto;
+  width: 85%;
+  color: #302F30;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.footer-section .footer-content .media-icons a {
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  background-color: #373316;
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.footer-section .footer-content .media-icons a:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .header-section {
+    display: none;
+  }
+  .header-section .menu-btn {
+    display: block;
+  }
+  .header-section .header-content-container {
+    padding-top: 8rem;
+  }
+  .header-section .header-content-container h1 {
+    font-size: 3rem;
+  }
+  .header-section .mobile-logo {
+    display: block;
+  }
+  .header-section .navigation-section {
+    background-color: #F57F34;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    z-index: 500;
+  }
+  .header-section .navigation-section .navigation-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-section .navigation-section .navigation-container .navigation-menu {
+    text-align: center;
+  }
+  .header-section .navigation-section .navigation-container .navigation-menu a {
+    display: block;
+    color: #707070;
+  }
+  .header-section .navigation-section .navigation-container .navigation-menu a:first-child {
+    margin-left: 2rem;
+  }
+  .header-section .navigation-section .navigation-container .navigation-logo img {
+    height: 50px;
+  }
+  .header-section .navigation-section .close-menu {
+    display: block;
+  }
+  .header-section-mobile {
+    display: block;
+    height: 500px;
+  }
+  .header-section-mobile .mobile-magic {
+    z-index: 5;
+  }
+  .header-section-mobile .mobile-magic h1 {
+    font-size: 1.2rem;
+  }
+  .header-section-mobile .menu-btn {
+    display: block;
+    z-index: 10000;
+  }
+  .header-section-mobile .header-content-container {
+    padding-top: 8rem;
+  }
+  .header-section-mobile .header-content-container h1 {
+    font-size: 2rem;
+  }
+  .header-section-mobile .mobile-logo {
+    display: block;
+    z-index: 1000;
+  }
+  .header-section-mobile .navigation-section {
+    background-color: #ffffff;
+    background-image: url("../assets/blueprint-deco/about-construction-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 165%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    z-index: 10000;
+  }
+  .header-section-mobile .navigation-section .navigation-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-section-mobile .navigation-section .navigation-container .navigation-menu {
+    text-align: center;
+    margin-left: -2rem;
+  }
+  .header-section-mobile .navigation-section .navigation-container .navigation-menu a {
+    display: block;
+    color: #707070;
+    margin-top: 2rem;
+  }
+  .header-section-mobile .navigation-section .navigation-container .navigation-menu a:first-child {
+    margin-left: 2rem;
+  }
+  .header-section-mobile .navigation-section .navigation-container .navigation-logo img {
+    height: 70px;
+  }
+  .header-section-mobile .navigation-section .close-menu {
+    display: block;
+  }
+  .about-section .about-section-container .about-section-list {
+    padding: 2rem 1rem;
+    font-size: 15px;
+  }
+  .about-section .about-section-container .about-section-construction {
+    height: 400px;
+  }
+  .roots-values-section .roots-values-section-container .roots-values-section-content {
+    height: 400px;
+    padding: 1rem 3rem;
+  }
+  .roots-values-section .roots-values-section-container .roots-values-construction {
+    height: 400px;
+    margin-top: 5rem;
+  }
+  .our-projects-section {
+    height: auto;
+  }
+  .our-projects-section .our-project-image {
+    height: 400px;
+  }
+  .our-projects-section .our-project-details {
+    height: 400px;
+  }
+  .our-projects-section .our-project-details .project-details-content .project-details-content-data {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: #fff;
+  }
+  .project-building-section {
+    height: auto;
+  }
+  .project-building-section .project-building-image {
+    height: 400px;
+    background-color: aquamarine;
+    position: relative;
+  }
+  .project-building-section .project-building-image::after {
+    content: "";
+    border-bottom: 0;
+    top: 0;
+    left: 0;
+    border-top: 5px solid #DB7837;
+    position: absolute;
+  }
+  .project-building-section .project-building-details .building-details-header .building-details-header-left {
+    height: 400px;
+  }
+  .project-building-section .project-building-details .building-details-header .building-details-header-right {
+    height: 400px;
+  }
+  .project-building-section .project-building-details .building-details-footer {
+    height: 400px;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+  .project-building-section .project-building-details .building-details-footer p {
+    width: 100%;
+    padding: 5% 10% 5% 5%;
+    text-align: center;
+  }
+  .our-services-section {
+    height: auto;
+    padding: 2rem 1rem;
+    background-color: #f2f2f2;
+  }
+  .our-services-section .our-services-section-container ul li {
+    float: none;
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  .footer-section {
+    height: 100%;
+  }
+  .footer-section .footer-section-image {
+    height: 300px;
+  }
+  .footer-section .footer-content {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */

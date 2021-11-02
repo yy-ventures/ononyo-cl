@@ -65,11 +65,10 @@
     </header>
     <section class="about-section">
         <div class="row about-section-container">
-            <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center about-section-list" data-aos="fade-up" data-aos-duration="500">
+            <div class="col-md-6 d-flex justify-content-center align-items-center about-section-list" data-aos="fade-up" data-aos-duration="500">
                 <div class="pt-5 mt-5 about-section-content">
                     <div class="row">
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-10 text-center text-md-start text-lg-start">
+                        <div class="col-md-12 text-center text-md-start text-lg-start">
                             <p class="px-5">Ononyo aims to embark on a journey of building a greener and more sustainable future. We plan to reconstruct the
                                 construction sector by implementing sustainable, innovative, and forward-thinking building practices. We believe
                                 in sustainable business practices and encourage others to do the same by spreading awareness about methods and
@@ -82,30 +81,35 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 about-section-construction" data-aos="fade-down" data-aos-duration="500"></div>
+            <div class="col-md-6 about-section-construction" data-aos="fade-down" data-aos-duration="500"></div>
         </div>
     </section>
     <section class="roots-values-section">
         <div class="row roots-values-section-container flex-lg-row flex-column-reverse">
-            <div class="col-lg-6 d-flex align-items-center roots-values-section-content">
-                <div class="roots-values-section-listings">
-                    <div class="row">
-                        <div class="col-lg-10 d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center roots-values-section-listings-value">
-                            <div>
-                                <h2 data-aos="fade-down" data-aos-duration="800">roots & values</h2>
-                                <ul>
-                                    <li data-aos="fade-right" data-aos-duration="1200">community building</li>
-                                    <li data-aos="fade-right" data-aos-duration="1400">development</li>
-                                    <li data-aos="fade-right" data-aos-duration="1600">sustainability</li>
-                                    <li data-aos="fade-right" data-aos-duration="1800">quality</li>
-                                </ul>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center roots-values-section-content">
+                    <div class="roots-values-section-listings">
+                        <div class="row">
+                            <div class="col-md-10 d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center roots-values-section-listings-value">
+                                <div>
+                                    <h2 data-aos="fade-down" data-aos-duration="800">roots & values</h2>
+                                    <ul>
+                                        <li data-aos="fade-right" data-aos-duration="1200">community building</li>
+                                        <li data-aos="fade-right" data-aos-duration="1400">development</li>
+                                        <li data-aos="fade-right" data-aos-duration="1600">sustainability</li>
+                                        <li data-aos="fade-right" data-aos-duration="1800">quality</li>
+                                    </ul>
+                                </div>
                             </div>
+                            <!-- <div class="col-md-2"></div> -->
                         </div>
-                        <div class="col-lg-2"></div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 roots-values-construction" data-aos="fade-left" data-aos-duration="500"></div>
+            <!-- <div class="col-md-6 roots-values-construction" data-aos="fade-left" data-aos-duration="500"></div> -->
+            <div class="col-md-6">
+                <div class="roots-values-construction" data-aos="fade-right"></div>
+            </div>
         </div>
     </section>
     <section class="our-projects-section">
@@ -129,10 +133,10 @@
                     <div class="col-lg-12 building-details-header">
                         <div class="row h-100">
                             <div class="col-lg-7 col-12 bg-info building-details-header-left" data-aos="fade-up" data-aos-duration="500"></div>
-                            <div class="col-lg-5 col-12 building-details-header-right" data-aos="fade-left" data-aos-duration="700"></div>
+                            <div class="col-lg-5 col-12 building-details-header-right" data-aos="fade-right" data-aos-duration="700"></div>
                         </div>
                     </div>
-                    <div class="col-lg-12 building-details-footer d-flex align-items-center" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="col-lg-12 building-details-footer d-flex align-items-center" data-aos="fade-right" data-aos-duration="1000">
                         <div>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged..</p>
                         </div>
@@ -186,7 +190,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5" data-aos="fade-left" data-aos-duration="500">
+                        <div class="col-lg-5" data-aos="fade-right" data-aos-duration="500">
                             <div class="text-lg-end text-sm-start text-md-start media-icons">
                                 <a href="/"><i class="fab fa-facebook-f"></i></a>
                                 <a href="/"><i class="fab fa-instagram"></i></a>
@@ -211,6 +215,42 @@
     <script src="./js/header.js"></script>
     <script src="./js/mobile.js"></script>
     <script src="./js/mobileMenu.js"></script>
-    
+    <style>
+        .row{
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
+        .row>* {
+            padding-right: calc(var(--bs-gutter-x) * 0);
+            padding-left: calc(var(--bs-gutter-x) * 0);
+        }
+        /* .about-section .about-section-container{
+            margin-right: 0;
+        } */
+        .about-section .about-section-container .about-section-list .about-section-content{            
+            padding: 0px 0px 0px 114px;
+        }
+        /* .roots-values-section .roots-values-section-container{
+            margin-right: 0;
+        } */
+        @media screen and (max-width: 992px) {
+            .about-section .about-section-container .about-section-list .about-section-content{
+                padding: 0;
+            }
+            .about-section{
+                height: auto;
+            }
+            .roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .roots-values-section-listings-value{
+                height: auto;
+                padding-top: 13%;
+            }
+            .roots-values-section {
+                height: auto;
+            }
+            .our-services-section .our-services-section-container .our-services-section-header h2{
+                text-align: center;
+            }
+        }
+    </style>
 </body>
 </html>

@@ -147,6 +147,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow-x: hidden;
 }
 
 .header-section-mobile .mobile-magic {

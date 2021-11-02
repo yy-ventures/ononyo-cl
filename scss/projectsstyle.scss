@@ -12,8 +12,13 @@ $green: #8ba749;
 $lightGreen: #8ea6a2;
 $soil: #db7837;
 $soil-dark: rgba(165,69,44,1);
+html,
 body {
-  overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 // .row > * {

@@ -9,8 +9,13 @@ $lightOrange: #ff9b48;
 $green: #8ba749;
 $lightGreen: #8ea6a2;
 $soil: #db7837;
+html,
 body {
-  overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 .project-new-section {
   height: 800px;

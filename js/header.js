@@ -2,13 +2,6 @@ $(document).ready(function () {
     var $magic = $(".magic"),
       magicWHalf = $magic.width() / 2;
     $(document).on("mousemove", function (e) {
-    console.log('e.pageX');
-    console.log(e.pageX);
-    console.log('magicWHalf');
-    console.log(magicWHalf);
-
-
-
 
       if (e.pageX - magicWHalf >= 0) {
         if(e.pageX >=1010){

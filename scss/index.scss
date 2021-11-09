@@ -26,6 +26,7 @@ $soil: #DB7837;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow-x: hidden;
     .magic{
         z-index: 5;
         position: absolute;
@@ -38,6 +39,7 @@ $soil: #DB7837;
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
+        
         h1 {
             font-size: 3.5em;
             text-transform: uppercase;

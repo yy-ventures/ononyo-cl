@@ -13,16 +13,21 @@
 //         }
 //     });
 // });
-var $magic = $(".mobile-magic"),
+
+$('document').ready(function(){
+      var $magic = $(".mobile-magic"),
         magicWHalf = $magic.width() / 2;
         $(".header-section-mobile").bind('mousewheel DOMMouseScroll', function (e) { return false; });
-        // $magic.mousemove(function(e) {
-        //     console.log("OOOLLL");
-        // });
-
-        $(".header-section-mobile").mousemove(function(e) {
-            console.log("OOO");
+        $(".header-section-mobile").bind('mouseup DOMMouseScroll', function (e) { 
+            return false;
+         });
+        $(".header-section-mobile").mouseup(function(e) {
+            return false;
         });
+        $(".header-section-mobile").mousedown(function(e) {
+            return false
+        });
+        
 let parentElemWidth = $magic[0].parentElement.clientWidth;
 
 // console.log(parentElemWidth);
@@ -53,5 +58,5 @@ let direction = "right";
 // }
 
 // setInterval(()=>headerAnimation(num), 10)
-
+});
 

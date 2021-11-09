@@ -63,7 +63,7 @@
             <h1>Explore greater <br> heights & wider <br> perspectives</h1>
         </div>
     </header>
-    <section class="about-section">
+    <section class="about-section scroll">
         <div class="row about-section-container">
             <div class="col-md-6 d-flex justify-content-center align-items-center about-section-list" data-aos="fade-up" data-aos-duration="500">
                 <div class="pt-5 mt-5 about-section-content">
@@ -208,7 +208,14 @@
                 </div>
             </div>
         </div>
+        
     </section>
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true" style="display: none;"></a>
+    <a href="#" id="toDownBtn" class="text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"><i class="fa fa-angle-down"></i></a>
+    <!-- <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true" style="display: none;"></a> -->
+        <!-- <div class="height">
+            <h3 class="text-center scroll">Scroll down </h3>
+        </div> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/index.js"></script>
@@ -255,6 +262,89 @@
             }
             
         }
+
+        .scroll {
+            color: #fff;
+            margin-top: 100px
+        }
+        #toDownBtn {
+            position: fixed;
+            bottom: 26px;
+            right: 39px;
+            z-index: 98;
+            padding: 21px;
+            background-color: hsl(23deg 91% 58%);
+            height: 40px;
+            color: white;
+            font-weight: bolder;
+            width: 40px;
+            padding: 9px 15px;
+            border-radius: 22px;
+        }
+
+        #toTopBtn {
+            position: fixed;
+            bottom: 26px;
+            right: 39px;
+            z-index: 98;
+            padding: 21px;
+            background-color: #302f30;
+            border-radius: 22px;
+        }
+
+        .js .cd-top--fade-out {
+            opacity: .5
+        }
+
+        .js .cd-top--is-visible {
+            visibility: visible;
+            opacity: 1
+        }
+
+        .js .cd-top {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity .3s, visibility .3s, background-color .3s
+        }
+
+        .cd-top {
+            position: fixed;
+            bottom: 20px;
+            bottom: var(--cd-back-to-top-margin);
+            right: 20px;
+            right: var(--cd-back-to-top-margin);
+            display: inline-block;
+            height: 40px;
+            height: var(--cd-back-to-top-size);
+            width: 40px;
+            width: var(--cd-back-to-top-size);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+            background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+            background-color: hsla(5, 76%, 62%, .8);
+            background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+        }
+
     </style>
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 20) {
+                    $('#toTopBtn').fadeIn();
+                    $('#toDownBtn').fadeOut();
+                } else {
+                    $('#toTopBtn').fadeOut();
+                    $('#toDownBtn').fadeIn();
+                }
+                });
+
+                $('#toTopBtn').click(function() {
+                $("html, body").animate({
+                scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>

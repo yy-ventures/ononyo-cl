@@ -11,14 +11,14 @@ $(document).ready(function () {
         console.log('screen_width =>' + screen.width);
         console.log('screen_width_modified =>' + (screen.width-340));
 
-        if(e.pageX >=(screen.width-354)){
+      if(e.pageX >= (screen.width-354) && screen.width <= 1030){
           $magic.css({ "left":null,right:0 });
           // $magic.css({ "left": e.pageX - magicWHalf });
-        }else{
-           $magic.css({ "left": e.pageX - magicWHalf });
+        }else if(e.pageX >= (screen.width-475) && e.pageX <= 1,445){
+           $magic.css({"left": e.pageX - magicWHalf});
         }        
       } else {
-        $magic.css({ "left": 0 });
+          $magic.css({ "left": 0 });
       }
       // if (e.pageX + magicWHalf > $magic[0].parentElement.clientWidth) {
       //   $magic.css({ "left":"","right": 0 });

@@ -25,7 +25,7 @@ body {
 // }
 
 .about-us {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   &::before{
       content: "";
@@ -121,9 +121,11 @@ body {
     }
 }
 .about-section-main{
-    height: 73%;
+    // height: 73%;
+    height: auto;
     .about-section-main-content{
-        width: 60%;
+        // width: 60%;
+        padding: 5% 10%;
         color: $text;
         font-size: 1.1rem;
     }

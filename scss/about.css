@@ -6,7 +6,7 @@ body {
 }
 
 .about-us {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -125,11 +125,11 @@ body {
 }
 
 .about-us .about-section-main {
-  height: 73%;
+  height: auto;
 }
 
 .about-us .about-section-main .about-section-main-content {
-  width: 60%;
+  padding: 5% 10%;
   color: #707070;
   font-size: 1.1rem;
 }

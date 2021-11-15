@@ -6,6 +6,7 @@
   background-image: url("../assets/header/image-back.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
   overflow-x: hidden;
 }
@@ -147,6 +148,7 @@
   background-image: url("../assets/header/image-back.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
   overflow-x: hidden;
 }

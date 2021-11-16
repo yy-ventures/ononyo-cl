@@ -659,7 +659,7 @@
     background-image: url("../assets/blueprint-deco/about-construction-2.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 165%;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
@@ -690,7 +690,7 @@
     margin-left: 2rem;
   }
   .header-section-mobile .navigation-section .navigation-container .navigation-logo img {
-    height: 70px;
+    height: 60px;
   }
   .header-section-mobile .navigation-section .close-menu {
     display: block;

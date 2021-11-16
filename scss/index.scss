@@ -156,12 +156,11 @@ $soil: #DB7837;
         left: calc(50% - 10rem);
         width: 50%;
         height: 100%;
-        background: url('../assets//header/move-img.png') 50% 50% no-repeat fixed;
+        background: url('../assets//header/move-img.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
-        // animation: animate 4s infinite alternate-reverse;
         h1 {
             font-size: 3.5em;
             text-transform: uppercase;

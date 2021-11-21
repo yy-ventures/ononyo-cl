@@ -23,9 +23,7 @@ body {
 // .row > * {
 //     padding: 0;
 // }
-.hide-now{
-  display: none;
-}
+
 .about-us {
   min-height: 100vh;
   position: relative;
@@ -125,6 +123,25 @@ body {
 .about-section-main{
     // height: 73%;
     height: auto;
+    position: relative;
+    .person-avatar{
+      position: absolute;
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      background-color: $white;
+      border: 5px solid $lightGreen;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 1000;
+      overflow: hidden;
+      img{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
     .about-section-main-content{
         height: 100%;
         width: 80%;
@@ -134,10 +151,24 @@ body {
           color: $white;
           left: 0;
           bottom: 0;
+          padding-bottom: 1rem;
+          &::after{
+            content: "";
+            position: absolute;
+            width: 40%;
+            height: 5px;
+            background-color: $primaryColor;
+            bottom: 0;
+            left: 0;
+          }
           h4{
             font-weight: bold;
             color: #A5452C;
             font-size: 4vmin;
+          }
+          h6{
+            color: #43572E;
+            font-size: 2.5vmin;
           }
         }
     }
@@ -186,7 +217,6 @@ body {
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-color: red;
 
     h1 {
       padding-top: 2em;
@@ -198,182 +228,19 @@ body {
       background: #fff;
     }
 }
-
-.board-members {
-  height: auto;
-  position: relative;
-  // min-height: 100vh; 
-  padding-top: 5rem;
-  padding-bottom: 8rem;
-  &:before {
-    content: '';
-    position: absolute;
+.person-detail-container{
+  .person-detail-print{
+    width: 100%;
     height: 100%;
-    width: 50%;
-    top: 0;
-    right: 0;
-    background-color: #CED7DD;
-    z-index: -1;
-    // border-bottom: 25px solid #db7837;
+    background-image: url("../assets/blueprint-deco/construction-4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  h2 {
-    padding-top: 2em;
-    color: #8ba749;
-    position: relative;
-    font-weight: 900;
-    font-size: 3rem;
-    &:before {
-      content: "";
-      border-bottom: 5px solid #8ba749;
-      width: 8%;
-      display: inline-block;
-      left: 0;
-      bottom: 0;
-      z-index: 1;
-      margin-right: 0.3em;
-    }
-  }
-  .flex-board-members {
-    height: auto;
-    display: flex;
-    // min-height: 100vh;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 3em auto 0 auto;
-    width: Min(95%, 1500px);
-    .board-member-head {
-      text-align: center;
-      margin: 1em 0;
-      width: 25%;
-      padding: 2rem 0;
-      img {
-        width: 160px;
-        height: 160px;
-        object-fit: cover;
-        // object-position: center;
-        border-radius: 50%;
-        border: 5px solid $lightGreen;
-        // border: 0.3em solid #8EA6A2;
-      }
-      p {
-        font-family: 'Roboto', sans-serif;
-        color: #43572e;
-        font-weight: 500;
-        font-size: Min(0.8rem, 60%);
-        margin: 0.5em;
-        margin-top: 1.5em;
-        font-size: 1.1rem;
-      }
-      hr {
-        display: block;
-        color: #f57f34;
-        width: 30%;
-        margin: 0 auto;
-        height: 5px;
-        opacity: 1;
-      }
-    }
+  .person-detail-data{
+    padding: 10%;
   }
 }
-
-.our-team {
-  height: auto;
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 8rem;
-  &:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    top: 0;
-    left: 0;
-    background-color: #EFD8BC;
-    z-index: -1;
-  }
-  &:after {
-    content: "";
-    background-image: url("../assets/blueprint-deco/about-construction-2.png");
-    background-attachment: fixed;
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-  }
-  h2 {
-    padding-top: 2em;
-    color: #A5452C;
-    position: relative;
-    font-weight: 900;
-    font-size: 3rem;
-    &:before {
-      content: "";
-      border-bottom: 5px solid inherit;
-      width: 8%;
-      display: inline-block;
-      left: 0;
-      bottom: 0;
-      z-index: 1;
-      margin-left: 0.3em;
-    }
-    &:after {
-      content: "";
-      border-bottom: 5px solid #A5452C;
-      width: 20%;
-      display: inline-block;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-      margin-left: 0.3em;
-    }
-  }
-  .flex-team-members {
-    height: auto;
-    display: flex;
-    // min-height: 100vh;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 3em auto 0 auto;
-    width: Min(95%, 1500px);
-    .team-member-head {
-      text-align: center;
-      margin: 1em 0;
-      width: 25%;
-      padding: 2rem 0;
-      img {
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
-        // object-position: center;
-        border-radius: 50%;
-        border: 5px solid $lightGreen;
-        // border: 0.3em solid #8EA6A2;
-      }
-      p {
-        font-family: 'Roboto', sans-serif;
-        color: #43572e;
-        font-weight: 500;
-        font-size: Min(0.8rem, 60%);
-        margin: 0.5em;
-        margin-top: 1.5em;
-        font-size: 1.1rem;
-      }
-      hr {
-        display: block;
-        color: #f57f34;
-        width: 30%;
-        margin: 0 auto;
-        height: 5px;
-        opacity: 1;
-      }
-    }
-  }
-}
-
 .footer-section{
     height: 320px;
     border-top: 15px solid;
@@ -403,6 +270,21 @@ body {
             }
         }
     }
+}
+
+@media screen and (min-width: 1441px){
+  .about-us{
+    .about-section-main{
+      .person-avatar{
+        height: 600px;
+        width: 600px;
+        img{
+          height: 600px;
+          width: 600px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -461,13 +343,32 @@ body {
         .about-section-main{
           height: auto;
           margin-top: 7rem;
+          .person-avatar{
+            height: 200px;
+            width: 200px;
+            img{
+              height: 200px;
+              width: 200px;
+            }
+          }
           .about-section-main-content{
             width: 100%;
             background-color: #EFD8BC;
-            padding: 3rem 0;
-            p{
-              padding: 1rem 2rem;
-              font-size: 16px;
+            padding: 3rem;
+            height: 250px;
+            .about-section-main-content-profile{
+              position: absolute;
+              color: $white;
+              left: 0;
+              bottom: 0;
+              padding-bottom: 1rem;
+              text-align: center;
+              h4{
+                font-size: 1.5rem;
+              }
+              h6{
+                font-size: 1.1rem;
+              }
             }
           }
           .about-section-main-image{
@@ -479,75 +380,15 @@ body {
           }
         }
     }
-    .board-members{
-      background-image: url("../assets/blueprint-deco/construction_opacity.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      padding: 0;
-      &::before{
-        width: 0;
+    .person-detail-container{
+      .person-detail-print{
+        display: none;
       }
-      h2{
-        text-align: center;
-        &::before{
-          content: "";
-          border: 0;
-          margin-right: 0;
-        }
-      }
-      .flex-board-members{
-        align-items: flex-start;
-        .board-member-head{
-          width: 50%;
-          img{
-            height: 140px;
-            width: 140px;
-          }
-          p{
-            font-size: 14px;
-          }
-        }
-      }
-    }
-    .our-team{
-      background-color: #CED7DD;
-      padding: 0;
-      &::before{
-        width: 0;
-      }
-      h2{
-        text-align: center;
-        font-size: 3rem;
-        margin-left: 0; 
-        color: $primaryColor;
-        &::before{
-          content: "";
-          border: 0;
-          margin-left: 0;
-          width: 0;
-        }
-        &::after{
-          content: "";
-          border: 0;
-          margin-left: 0;
-          width: 0;
-        }
-      }
-      .flex-team-members{
-        margin-top: -1rem;
-        align-items: flex-start;
-        .team-member-head{
-          width: 50%;
-          img{
-            height: 140px;
-            width: 140px;
-          }
-          p{
-            font-size: 14px;
-          }
-        }
+      .person-detail-data{
+        padding: 10%;
+        background-image: url("../assets/blueprint-deco/construction_mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     }
     .footer-section{

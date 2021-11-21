@@ -5,10 +5,6 @@ body {
   overflow-x: hidden;
 }
 
-.hide-now {
-  display: none;
-}
-
 .about-us {
   min-height: 100vh;
   position: relative;
@@ -130,6 +126,29 @@ body {
 
 .about-us .about-section-main {
   height: auto;
+  position: relative;
+}
+
+.about-us .about-section-main .person-avatar {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 5px solid #8EA6A2;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.about-us .about-section-main .person-avatar img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-us .about-section-main .about-section-main-content {
@@ -143,12 +162,28 @@ body {
   color: #ffffff;
   left: 0;
   bottom: 0;
+  padding-bottom: 1rem;
+}
+
+.about-us .about-section-main .about-section-main-content .about-section-main-content-profile::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 5px;
+  background-color: #F57F34;
+  bottom: 0;
+  left: 0;
 }
 
 .about-us .about-section-main .about-section-main-content .about-section-main-content-profile h4 {
   font-weight: bold;
   color: #A5452C;
   font-size: 4vmin;
+}
+
+.about-us .about-section-main .about-section-main-content .about-section-main-content-profile h6 {
+  color: #43572E;
+  font-size: 2.5vmin;
 }
 
 .about-us .about-section-main .about-section-main-image .about-section-main-image-header {
@@ -199,7 +234,6 @@ body {
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-color: red;
 }
 
 .about-us-right h1 {
@@ -212,203 +246,17 @@ body {
   background: #fff;
 }
 
-.board-members {
-  height: auto;
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 8rem;
-}
-
-.board-members:before {
-  content: '';
-  position: absolute;
+.person-detail-container .person-detail-print {
+  width: 100%;
   height: 100%;
-  width: 50%;
-  top: 0;
-  right: 0;
-  background-color: #CED7DD;
-  z-index: -1;
+  background-image: url("../assets/blueprint-deco/construction-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.board-members h2 {
-  padding-top: 2em;
-  color: #8ba749;
-  position: relative;
-  font-weight: 900;
-  font-size: 3rem;
-}
-
-.board-members h2:before {
-  content: "";
-  border-bottom: 5px solid #8ba749;
-  width: 8%;
-  display: inline-block;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  margin-right: 0.3em;
-}
-
-.board-members .flex-board-members {
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 3em auto 0 auto;
-  width: Min(95%, 1500px);
-}
-
-.board-members .flex-board-members .board-member-head {
-  text-align: center;
-  margin: 1em 0;
-  width: 25%;
-  padding: 2rem 0;
-}
-
-.board-members .flex-board-members .board-member-head img {
-  width: 160px;
-  height: 160px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #8EA6A2;
-}
-
-.board-members .flex-board-members .board-member-head p {
-  font-family: 'Roboto', sans-serif;
-  color: #43572e;
-  font-weight: 500;
-  font-size: Min(0.8rem, 60%);
-  margin: 0.5em;
-  margin-top: 1.5em;
-  font-size: 1.1rem;
-}
-
-.board-members .flex-board-members .board-member-head hr {
-  display: block;
-  color: #f57f34;
-  width: 30%;
-  margin: 0 auto;
-  height: 5px;
-  opacity: 1;
-}
-
-.our-team {
-  height: auto;
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 8rem;
-}
-
-.our-team:before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  top: 0;
-  left: 0;
-  background-color: #EFD8BC;
-  z-index: -1;
-}
-
-.our-team:after {
-  content: "";
-  background-image: url("../assets/blueprint-deco/about-construction-2.png");
-  background-attachment: fixed;
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.our-team h2 {
-  padding-top: 2em;
-  color: #A5452C;
-  position: relative;
-  font-weight: 900;
-  font-size: 3rem;
-}
-
-.our-team h2:before {
-  content: "";
-  border-bottom: 5px solid inherit;
-  width: 8%;
-  display: inline-block;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  margin-left: 0.3em;
-}
-
-.our-team h2:after {
-  content: "";
-  border-bottom: 5px solid #A5452C;
-  width: 20%;
-  display: inline-block;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  margin-left: 0.3em;
-}
-
-.our-team .flex-team-members {
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 3em auto 0 auto;
-  width: Min(95%, 1500px);
-}
-
-.our-team .flex-team-members .team-member-head {
-  text-align: center;
-  margin: 1em 0;
-  width: 25%;
-  padding: 2rem 0;
-}
-
-.our-team .flex-team-members .team-member-head img {
-  width: 180px;
-  height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #8EA6A2;
-}
-
-.our-team .flex-team-members .team-member-head p {
-  font-family: 'Roboto', sans-serif;
-  color: #43572e;
-  font-weight: 500;
-  font-size: Min(0.8rem, 60%);
-  margin: 0.5em;
-  margin-top: 1.5em;
-  font-size: 1.1rem;
-}
-
-.our-team .flex-team-members .team-member-head hr {
-  display: block;
-  color: #f57f34;
-  width: 30%;
-  margin: 0 auto;
-  height: 5px;
-  opacity: 1;
+.person-detail-container .person-detail-data {
+  padding: 10%;
 }
 
 .footer-section {
@@ -449,6 +297,17 @@ body {
 
 .footer-section .footer-content .media-icons a:last-child {
   margin-right: 0;
+}
+
+@media screen and (min-width: 1441px) {
+  .about-us .about-section-main .person-avatar {
+    height: 600px;
+    width: 600px;
+  }
+  .about-us .about-section-main .person-avatar img {
+    height: 600px;
+    width: 600px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -513,92 +372,45 @@ body {
     height: auto;
     margin-top: 7rem;
   }
+  .about-us .about-section-main .person-avatar {
+    height: 200px;
+    width: 200px;
+  }
+  .about-us .about-section-main .person-avatar img {
+    height: 200px;
+    width: 200px;
+  }
   .about-us .about-section-main .about-section-main-content {
     width: 100%;
     background-color: #EFD8BC;
-    padding: 3rem 0;
+    padding: 3rem;
+    height: 250px;
   }
-  .about-us .about-section-main .about-section-main-content p {
-    padding: 1rem 2rem;
-    font-size: 16px;
+  .about-us .about-section-main .about-section-main-content .about-section-main-content-profile {
+    position: absolute;
+    color: #ffffff;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .about-us .about-section-main .about-section-main-content .about-section-main-content-profile h4 {
+    font-size: 1.5rem;
+  }
+  .about-us .about-section-main .about-section-main-content .about-section-main-content-profile h6 {
+    font-size: 1.1rem;
   }
   .about-us .about-section-main .about-section-main-image .about-section-main-image-header h2 {
     font-size: 2rem;
   }
-  .board-members {
-    background-image: url("../assets/blueprint-deco/construction_opacity.jpg");
+  .person-detail-container .person-detail-print {
+    display: none;
+  }
+  .person-detail-container .person-detail-data {
+    padding: 10%;
+    background-image: url("../assets/blueprint-deco/construction_mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 0;
-  }
-  .board-members::before {
-    width: 0;
-  }
-  .board-members h2 {
-    text-align: center;
-  }
-  .board-members h2::before {
-    content: "";
-    border: 0;
-    margin-right: 0;
-  }
-  .board-members .flex-board-members {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .board-members .flex-board-members .board-member-head {
-    width: 50%;
-  }
-  .board-members .flex-board-members .board-member-head img {
-    height: 140px;
-    width: 140px;
-  }
-  .board-members .flex-board-members .board-member-head p {
-    font-size: 14px;
-  }
-  .our-team {
-    background-color: #CED7DD;
-    padding: 0;
-  }
-  .our-team::before {
-    width: 0;
-  }
-  .our-team h2 {
-    text-align: center;
-    font-size: 3rem;
-    margin-left: 0;
-    color: #F57F34;
-  }
-  .our-team h2::before {
-    content: "";
-    border: 0;
-    margin-left: 0;
-    width: 0;
-  }
-  .our-team h2::after {
-    content: "";
-    border: 0;
-    margin-left: 0;
-    width: 0;
-  }
-  .our-team .flex-team-members {
-    margin-top: -1rem;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .our-team .flex-team-members .team-member-head {
-    width: 50%;
-  }
-  .our-team .flex-team-members .team-member-head img {
-    height: 140px;
-    width: 140px;
-  }
-  .our-team .flex-team-members .team-member-head p {
-    font-size: 14px;
   }
   .footer-section {
     height: 100%;

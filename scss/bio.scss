@@ -126,10 +126,20 @@ body {
     // height: 73%;
     height: auto;
     .about-section-main-content{
-        // width: 60%;
-        padding: 5% 10%;
-        color: $text;
-        font-size: 1.1rem;
+        height: 100%;
+        width: 80%;
+        position: relative;
+        .about-section-main-content-profile{
+          position: absolute;
+          color: $white;
+          left: 0;
+          bottom: 0;
+          h4{
+            font-weight: bold;
+            color: #A5452C;
+            font-size: 4vmin;
+          }
+        }
     }
     .about-section-main-image{
         .about-section-main-image-header{
@@ -172,7 +182,7 @@ body {
   .about-us-right {
     height: 100%;
     background-color: #fff;
-    background-image: url("./about.png");
+    background-image: url("../assets/blueprint-deco/about.png");
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;

@@ -176,7 +176,7 @@ body {
         h2{
             color: #a5452c;
             font-weight: 900;
-            font-size: 4em;
+            font-size: 6vmin;
             position: relative;
             text-transform: uppercase;
             &::after{
@@ -192,10 +192,11 @@ body {
             color: $text;
             font-weight: bold;
             text-transform: capitalize;
+            font-size: 3.5vmin;
         }
       }
       .projects-slider-container-body{
-          height: 400px;
+          height: 60vmin;
           background-color: #efd8bc;
           position: relative;
           img{
@@ -216,6 +217,7 @@ body {
       }
       .projects-slider-container-footer{
           padding: 10%;
+          display: none;
           h5{
               font-size: 2em;
               color: $text;
@@ -240,6 +242,7 @@ body {
       color: #777;
       padding: 1em;
       font-weight: bold;
+      font-size: 14px;
     }
   }
   .swiper-button-prev {

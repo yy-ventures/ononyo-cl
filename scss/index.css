@@ -317,6 +317,16 @@
 
 .roots-values-section .roots-values-section-container .roots-values-section-content {
   background: #FF9B48;
+  position: relative;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content .deep-black-line {
+  position: absolute;
+  height: 3px;
+  width: 65%;
+  left: 0;
+  top: 25%;
+  background: #302F30;
 }
 
 .roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings {
@@ -324,7 +334,6 @@
 }
 
 .roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .roots-values-section-listings-value {
-  border-top: 3px solid #302F30;
   padding-top: 2rem;
   color: #302F30;
   height: 800px;
@@ -341,7 +350,7 @@
 }
 
 .roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .roots-values-section-listings-value ul li {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-size: 1.1rem;
   text-transform: capitalize;
 }
@@ -703,11 +712,14 @@
     height: 400px;
   }
   .roots-values-section .roots-values-section-container .roots-values-section-content {
-    height: 400px;
+    height: 500px;
     padding: 1rem 3rem;
   }
+  .roots-values-section .roots-values-section-container .roots-values-section-content .deep-black-line {
+    top: 10%;
+  }
   .roots-values-section .roots-values-section-container .roots-values-construction {
-    height: 400px;
+    height: 500px;
     margin-top: 5rem;
   }
   .our-projects-section {

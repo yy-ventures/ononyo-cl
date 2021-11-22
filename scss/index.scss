@@ -287,10 +287,18 @@ $soil: #DB7837;
         height: 100%;
         .roots-values-section-content{
             background: $lightOrange;
+            position: relative;
+            .deep-black-line{
+                position: absolute;
+                height: 3px;
+                width: 65%;
+                left: 0;
+                top: 25%;
+                background: $darkText;
+            }
             .roots-values-section-listings{
                 width: 100%;
                 .roots-values-section-listings-value{
-                    border-top: 3px solid $darkText;
                     padding-top: 2rem;
                     color: $darkText;
                     height: 800px;
@@ -302,7 +310,7 @@ $soil: #DB7837;
                     ul{
                         margin-top: 2rem;
                         li{
-                            margin-top: 0.5rem;
+                            margin-top: 1rem;
                             font-size: 1.1rem;
                             text-transform: capitalize;
                         }
@@ -630,11 +638,14 @@ $soil: #DB7837;
     .roots-values-section{
         .roots-values-section-container{
             .roots-values-section-content{
-                height: 400px;
+                height: 500px;
                 padding: 1rem 3rem;
+                .deep-black-line{
+                    top: 10%;
+                }
             }
             .roots-values-construction{
-                height: 400px;
+                height: 500px;
                 margin-top: 5rem;
             }
         }

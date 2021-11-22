@@ -134,7 +134,6 @@ body {
   height: 400px;
   width: 400px;
   border-radius: 50%;
-  background-color: #ffffff;
   border: 5px solid #8EA6A2;
   left: 50%;
   top: 50%;
@@ -145,8 +144,8 @@ body {
 }
 
 .about-us .about-section-main .person-avatar img {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -163,6 +162,7 @@ body {
   left: 0;
   bottom: 0;
   padding-bottom: 1rem;
+  width: 50vmin;
 }
 
 .about-us .about-section-main .about-section-main-content .about-section-main-content-profile::after {
@@ -256,7 +256,11 @@ body {
 }
 
 .person-detail-container .person-detail-data {
-  padding: 10%;
+  padding: 20% 10%;
+}
+
+.person-detail-container .person-detail-data p {
+  font-size: 18px;
 }
 
 .footer-section {
@@ -332,7 +336,7 @@ body {
     background-image: url("../assets/blueprint-deco/about-construction-2.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60%;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -375,6 +379,7 @@ body {
   .about-us .about-section-main .person-avatar {
     height: 200px;
     width: 200px;
+    z-index: 1;
   }
   .about-us .about-section-main .person-avatar img {
     height: 200px;
@@ -385,17 +390,32 @@ body {
     background-color: #EFD8BC;
     padding: 3rem;
     height: 250px;
+    margin-top: 5rem;
   }
   .about-us .about-section-main .about-section-main-content .about-section-main-content-profile {
     position: absolute;
     color: #ffffff;
-    left: 0;
-    bottom: 0;
-    padding-bottom: 1rem;
+    left: 50%;
+    top: 50%;
+    padding: 1rem;
     text-align: center;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .about-us .about-section-main .about-section-main-content .about-section-main-content-profile::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    background-color: #F57F34;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .about-us .about-section-main .about-section-main-content .about-section-main-content-profile h4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .about-us .about-section-main .about-section-main-content .about-section-main-content-profile h6 {
     font-size: 1.1rem;
@@ -411,6 +431,11 @@ body {
     background-image: url("../assets/blueprint-deco/construction_mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .person-detail-container .person-detail-data p {
+    color: #302F30;
+    text-align: center;
+    font-size: 1rem;
   }
   .footer-section {
     height: 100%;

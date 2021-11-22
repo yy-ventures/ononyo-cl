@@ -514,6 +514,9 @@ body {
   .slider-small .small-slider-container {
     width: 100% !important;
   }
+  .slider-small .small-slider-container .swiper {
+    min-height: 250px;
+  }
   .slider-small .small-slider-container .swiper-button-prev,
   .slider-small .small-slider-container .swiper-button-next {
     display: none;

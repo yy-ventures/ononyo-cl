@@ -249,6 +249,7 @@ body {
   height: 500px;
   background-color: #efd8bc;
   position: relative;
+  
   .slider-div {
     p{
       color: #777;
@@ -448,6 +449,9 @@ body {
     margin-top: 30rem;
     .small-slider-container{
       width: 100% !important;
+      .swiper{
+        min-height: 250px;
+      }
       .swiper-button-prev,
       .swiper-button-next{
         display: none;

@@ -271,7 +271,7 @@
         #toDownBtn {
             position: fixed;
             bottom: 26px;
-            right: 39px;
+            right: 40px;
             z-index: 98;
             padding: 21px;
             background-color: hsl(23deg 91% 58%);
@@ -330,11 +330,19 @@
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 20) {
                     $('#toTopBtn').fadeIn();
-                    $('#toDownBtn').fadeOut();
-                } else {
-                    $('#toTopBtn').fadeOut();
+                    $('#toDownBtn').css("bottom", "70px")
+                 }else{
+                    $('#toDownBtn').css("bottom", "20px")
                     $('#toDownBtn').fadeIn();
+                    $('#toTopBtn').fadeOut();
                 }
+
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+                     $('#toDownBtn').fadeOut();
+                   }else{
+                   $('#toDownBtn').fadeIn();
+                   }
+
                 });
 
                 $('#toTopBtn').click(function() {
@@ -342,7 +350,14 @@
                 scrollTop: 0
                 }, 1000);
                 return false;
-            });
+               });
+
+               $('#toDownBtn').click(function() {
+                $("html, body").animate({
+                scrollTop: $(document).height() + $(window).height(),
+                }, 1000);
+                return false;
+               });
         });
     </script>
 </body>

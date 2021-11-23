@@ -349,6 +349,10 @@
 		transition:0.5s;
 	}
 	
+	
+	.contentCircle .CirItem1{
+		/* background:rgba(255, 176, 72, 0.83); */
+	}
 	.contentCircle .CirItem1::after,
 	.contentCircle .CirItem2::after,
 	.contentCircle .CirItem3::after,

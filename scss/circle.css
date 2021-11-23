@@ -1,5 +1,3 @@
-
-
 .projects-carousel .slider-container h4 {
 
 	padding: 0.5em 0 0.5em 0;
@@ -68,7 +66,9 @@
 		border-radius:50%;
 		position:relative;
 		left: 0;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		        transform: translateX(-50%);
 	}
 
 	.dotCircle{
@@ -260,6 +260,8 @@
 	.dotCircle .itemDot.active{
 		background:#302F30;
 		color:#fff;
+		-webkit-transition:0.5s;
+		-o-transition:0.5s;
 		transition:0.5s;
 		
 	}
@@ -276,7 +278,9 @@
 		left:0;
 		right:0;
 		bottom:0;
-		transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		    -ms-transform: scale(1.5);
+		        transform: scale(1.5);
 		display:block;
 	}
 	
@@ -284,13 +288,21 @@
 		display:block;
 		background-color: #F57F34;
 		border: 3px solid #302F30;
+		-webkit-transition: -webkit-transform 1s;
+		transition: -webkit-transform 1s;
+		-o-transition: transform 1s;
 		transition: transform 1s;
-		transform: scale(1.5);
+		transition: transform 1s, -webkit-transform 1s;
+		-webkit-transform: scale(1.5);
+		    -ms-transform: scale(1.5);
+		        transform: scale(1.5);
 		border-radius: 50%;
 	}	
 	.dotCircle .itemDot:hover{
 		background:#34495e;
 		color:#fff;
+		-webkit-transition:0.5s;
+		-o-transition:0.5s;
 		transition:0.5s;
 	}
 	.dotCircle .itemDot:hover::before{
@@ -316,6 +328,8 @@
 		bottom: 0;
 		left: 0;
 		opacity: 0;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
 		transition: 0.5s;
 		font-weight: bold;
 		font-size: 13px;
@@ -330,13 +344,11 @@
 	.CirItem.active{
 		z-index:1;
 		opacity:1;
+		-webkit-transition:0.5s;
+		-o-transition:0.5s;
 		transition:0.5s;
 	}
 	
-	
-	.contentCircle .CirItem1{
-		/* background:rgba(255, 176, 72, 0.83); */
-	}
 	.contentCircle .CirItem1::after,
 	.contentCircle .CirItem2::after,
 	.contentCircle .CirItem3::after,
@@ -362,7 +374,9 @@
 	.holderCircle{
 		top: 0;
 		left: 50%;
-		transform: translateY(-55%) translateX(-50%) rotate(90deg);
+		-webkit-transform: translateY(-55%) translateX(-50%) rotate(90deg);
+		    -ms-transform: translateY(-55%) translateX(-50%) rotate(90deg);
+		        transform: translateY(-55%) translateX(-50%) rotate(90deg);
 		width: 400px;
 		height: 400px;
 		margin-bottom: 10rem;
@@ -370,7 +384,9 @@
 		
 	}
 	.holderCircle #ononyo-path{
-		transform: rotate(90deg) translate(-100%, 30%);
+		-webkit-transform: rotate(90deg) translate(-100%, 30%);
+		    -ms-transform: rotate(90deg) translate(-100%, 30%);
+		        transform: rotate(90deg) translate(-100%, 30%);
 	}
 	.dotCircle{
 	
@@ -379,27 +395,37 @@
 	}
 
 	.dotCircle  .itemDot1::before{
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		        transform: rotate(-90deg);
 	}
 	
 	.dotCircle  .itemDot2::before{	
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);	
+		    -ms-transform: rotate(-90deg);	
+		        transform: rotate(-90deg);
 		
 	}
 	
 	.dotCircle  .itemDot3::before{
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		        transform: rotate(-90deg);
 		
 	}
 	
 	.dotCircle  .itemDot4::before{
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		        transform: rotate(-90deg);
 		
 	}
 	
 	
 	.dotCircle  .itemDot5::before{	
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);	
+		    -ms-transform: rotate(-90deg);	
+		        transform: rotate(-90deg);
 		
 	}
 	
@@ -407,39 +433,45 @@
 	
 	
 	.dotCircle  .itemDot6::before{	
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);	
+		    -ms-transform: rotate(-90deg);	
+		        transform: rotate(-90deg);
 		
 	}
 	
 	
 	.dotCircle  .itemDot7::before{
 		
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		
+		    -ms-transform: rotate(-90deg);
+		
+		        transform: rotate(-90deg);
 	}
 	
 	
 	
 	.dotCircle  .itemDot8::before{	
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);	
+		    -ms-transform: rotate(-90deg);	
+		        transform: rotate(-90deg);
 		
 	}
 	
 	
 	.dotCircle  .itemDot9::before{
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		        transform: rotate(-90deg);
 		
 	}
 	
 	
 	.dotCircle  .itemDot10::before{	
-		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);	
+		    -ms-transform: rotate(-90deg);	
+		        transform: rotate(-90deg);
 	
 	}
 
 }
-
-
-
-	
-	
-	

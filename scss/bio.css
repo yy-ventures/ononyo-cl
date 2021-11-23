@@ -178,12 +178,16 @@ body {
 .about-us .about-section-main .about-section-main-content .about-section-main-content-profile h4 {
   font-weight: bold;
   color: #A5452C;
-  font-size: 4vmin;
+  font-size: 3.5vmin;
 }
 
 .about-us .about-section-main .about-section-main-content .about-section-main-content-profile h6 {
   color: #43572E;
   font-size: 2.5vmin;
+}
+
+.about-us .about-section-main .about-section-main-content .yunus-bio h4 {
+  font-size: 3vmin;
 }
 
 .about-us .about-section-main .about-section-main-image .about-section-main-image-header {
@@ -409,7 +413,7 @@ body {
     width: 50%;
     height: 5px;
     background-color: #F57F34;
-    bottom: 0;
+    bottom: 10%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);

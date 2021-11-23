@@ -217,6 +217,10 @@ body {
   z-index: -1;
 }
 
+.board-members h3 {
+  display: none;
+}
+
 .board-members h2 {
   padding-top: 2em;
   color: #8ba749;
@@ -577,14 +581,16 @@ body {
     background-attachment: fixed;
     padding: 0;
   }
-  .board-members h2 {
-    text-align: center;
+  .board-members h3 {
+    display: block;
+    padding-top: 2em;
+    color: #8ba749;
+    position: relative;
+    font-weight: 900;
     font-size: 2.5rem;
   }
-  .board-members h2::before {
-    content: "";
-    border: 0;
-    margin: auto;
+  .board-members h2 {
+    display: none;
   }
   .board-members .flex-board-members-yunus {
     -webkit-box-align: start;
@@ -592,7 +598,7 @@ body {
             align-items: flex-start;
   }
   .board-members .flex-board-members-yunus .board-member-head {
-    width: 50%;
+    width: 100%;
   }
   .board-members .flex-board-members-yunus .board-member-head img {
     height: 140px;

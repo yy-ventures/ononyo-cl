@@ -425,15 +425,24 @@ body {
     left: 0;
     background: #EFD8BC;
     z-index: -1;
+    @media screen and (max-width: 900px){
+      background: #fff;
+    }
   }
   .tools-of-the-trade-header{
     position: relative;
     width: 50%;
+    @media screen and (max-width: 900px){
+      width: 100%;
+    }
     h1{
       color: #A5452C;
       text-transform: uppercase;
       font-weight: 900;
       font-size: 4rem;
+      @media screen and (max-width: 900px){
+        font-size: 2rem;
+      }
       position: relative;
       &::after{
         content: "";
@@ -458,7 +467,7 @@ body {
   }
   .tools-of-the-trade-content{
     padding: 10% 10% 10% 0;
-    min-height: 800px;
+    min-height: 400px;
     p{
       font-size: 16px;
       color: #707070;
@@ -470,7 +479,7 @@ body {
     }
   }
   .tools-of-the-trade-content-image{
-    min-height: 800px;
+    min-height: 400px;
     .tools-of-the-trade-content-image-first{
       height: 400px;
       position: relative;

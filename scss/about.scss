@@ -425,6 +425,19 @@ body {
     left: 0;
     background: #EFD8BC;
     z-index: -1;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-image: url("../assets/blueprint-deco/about-tool.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
     @media screen and (max-width: 900px){
       background: #fff;
     }
@@ -471,6 +484,9 @@ body {
     p{
       font-size: 16px;
       color: #707070;
+      @media screen and (max-width: 900px){
+        text-align: center;
+      }
     }
     @media screen and (min-width: 1441px){
       p{
@@ -588,7 +604,27 @@ body {
         object-fit: cover;
       }
     }
+    .tools-of-the-trade-content-image-seventh{
+      height: 400px;
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        border: 25px solid rgba(245, 127, 52, 0.5);
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    
   }
+  
 }
 .footer-section{
     height: 320px;

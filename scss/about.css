@@ -475,8 +475,22 @@ body {
   z-index: -1;
 }
 
+.tools-of-the-trade::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  right: 0;
+  background-image: url("../assets/blueprint-deco/about-tool.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
 @media screen and (max-width: 900px) {
-  .tools-of-the-trade::before {
+  .tools-of-the-trade::after {
     background: #fff;
   }
 }
@@ -543,6 +557,12 @@ body {
 .tools-of-the-trade .tools-of-the-trade-content p {
   font-size: 16px;
   color: #707070;
+}
+
+@media screen and (max-width: 900px) {
+  .tools-of-the-trade .tools-of-the-trade-content p {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1441px) {
@@ -679,6 +699,28 @@ body {
 }
 
 .tools-of-the-trade .tools-of-the-trade-content-image .tools-of-the-trade-content-image-sixth img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tools-of-the-trade .tools-of-the-trade-content-image .tools-of-the-trade-content-image-seventh {
+  height: 400px;
+  position: relative;
+}
+
+.tools-of-the-trade .tools-of-the-trade-content-image .tools-of-the-trade-content-image-seventh::before {
+  content: "";
+  position: absolute;
+  border: 25px solid rgba(245, 127, 52, 0.5);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.tools-of-the-trade .tools-of-the-trade-content-image .tools-of-the-trade-content-image-seventh img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;

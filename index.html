@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./scss/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
@@ -16,10 +17,11 @@
         <nav class="navigation-section">
             <div class="navigation-container">
                 <div class="navigation-menu">
-                    <a href="./index.html" class="active">Home</a>
-                    <a href="./about.html">About</a>
-                    <a href="./projects.html">Projects</a>
-                    <a href="./form.html">Contact</a>
+                    <a href="./index.html" class="active"><strong>Home</strong></a>
+                    <a href="./about.html"><strong>About</strong></a>
+                    <a href="./projects.html"><strong>Projects</strong></a>
+                    <a href="./gallery.html"><strong>Gallery</strong></a>
+                    <a href="./form.html"><strong>Contact</strong></a>
                 </div>
                 <div class="navigation-logo">
                     <img src="./assets/ononyo-logo.svg" alt="ononyo">
@@ -86,21 +88,81 @@
     </section>
     <section class="roots-values-section">
         <div class="row roots-values-section-container flex-lg-row flex-column-reverse">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="d-flex align-items-center roots-values-section-content">
                     <div class="deep-black-line"></div>
                     <div class="roots-values-section-listings">
                         <div class="row">
-                            <div class="col-lg-9 d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center align-items-center roots-values-section-listings-value">
-                                <div>
-                                    <h2 data-aos="fade-down" data-aos-duration="800">roots & values</h2>
-                                    <ul>
+                            <div class="col-lg-9">
+                                
+                                    <div class="d-flex align-items-center roots-values-section-listings-value justify-content-lg-end justify-content-md-center justify-content-sm-center">                                       
+                                        <div class="accordion" id="accordionExample">
+                                            <h2 data-aos="fade-down" data-aos-duration="800">roots & values</h2>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  <strong>Community Building</strong>
+                                                </button>
+                                              </h2>
+                                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <strong>Development</strong>
+                                                </button>
+                                              </h2>
+                                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <strong>Sustainability</strong>
+                                                </button>
+                                              </h2>
+                                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingFour">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    <strong>Quality</strong>
+                                                  </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                  <div class="accordion-body">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <!-- <ul>
                                         <li data-aos="fade-right" data-aos-duration="1200">community building</li>
                                         <li data-aos="fade-right" data-aos-duration="1400">development</li>
                                         <li data-aos="fade-right" data-aos-duration="1600">sustainability</li>
                                         <li data-aos="fade-right" data-aos-duration="1800">quality</li>
-                                    </ul>
-                                </div>
+                                    </ul> -->
+                                
                             </div>
                             <!-- <div class="col-md-2"></div> -->
                         </div>
@@ -108,7 +170,7 @@
                 </div>
             </div>
             <!-- <div class="col-md-6 roots-values-construction" data-aos="fade-left" data-aos-duration="500"></div> -->
-            <div class="col-md-6">
+            <div class="col-lg-6 col-sm-12">
                 <div class="roots-values-construction" data-aos="fade-right"></div>
             </div>
         </div>
@@ -158,6 +220,7 @@
                     <li><img src="./assets/service-3.png" alt=""></li>
                     <li><img src="./assets/service-4.png" alt=""></li>
                     <li><img src="./assets/service-5.png" alt=""></li>
+                    <li><img src="./assets/service-6.png" alt=""></li>
                 </ul>
             </div>
         </div>

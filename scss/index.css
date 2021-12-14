@@ -333,6 +333,37 @@
   width: 100%;
 }
 
+.roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .accordion {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 14% 0% 0% 16%;
+  width: 62%;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .accordion button {
+  background-color: #ff9b48;
+  border-bottom: 1px solid;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .accordion .accordion-item {
+  background-color: #ff9b48;
+  border: none;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .accordion .accordion-button:not(.collapsed) {
+  color: #4a453f;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .accordion .accordion-button:hover {
+  color: #fff;
+}
+
+.roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .accordion .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .roots-values-section .roots-values-section-container .roots-values-section-content .roots-values-section-listings .roots-values-section-listings-value {
   padding-top: 2rem;
   color: #302F30;
@@ -519,7 +550,7 @@
 .our-services-section .our-services-section-container ul li {
   list-style-type: none;
   float: left;
-  width: 18%;
+  width: 15%;
   margin-left: 2%;
   -webkit-transition: 1s;
   transition: 1s;
@@ -789,6 +820,17 @@
   .footer-section .footer-content {
     height: auto;
     padding: 2rem 1rem;
+  }
+  .accordion {
+    padding: 0% 0% 0% 16% !important;
+    width: 84% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .accordion {
+    padding: 0% 0% 0% 16%;
+    width: 84%;
   }
 }
 /*# sourceMappingURL=index.css.map */

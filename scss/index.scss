@@ -41,7 +41,6 @@ $soil: #DB7837;
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
-        
         h1 {
             font-size: 3.5em;
             text-transform: uppercase;
@@ -458,9 +457,14 @@ $soil: #DB7837;
             background-size: cover;
             background-position: center;
             p{
-                width: 65%;
+                width: 100%;
                 color: $darkText;
+                padding: 5% 5%; 
             }
+            img{
+                height: 100%;
+            }
+           
         }
     }
 }
@@ -720,9 +724,15 @@ $soil: #DB7837;
                 }
             }
             .building-details-footer{
-                height: 400px;
+                height: auto;
                 padding-left: 2rem;
                 padding-top: 2rem;
+                .h-100{
+                    height: max-content !important;
+                    img{
+                        height: 90%;
+                    }
+                }
                 p{
                     width: 100%;
                     padding: 5% 10% 5% 5%;

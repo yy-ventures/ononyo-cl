@@ -515,8 +515,13 @@
 }
 
 .project-building-section .project-building-details .building-details-footer p {
-  width: 65%;
+  width: 100%;
   color: #302F30;
+  padding: 5% 5%;
+}
+
+.project-building-section .project-building-details .building-details-footer img {
+  height: 100%;
 }
 
 .our-services-section {
@@ -791,9 +796,17 @@
     height: 400px;
   }
   .project-building-section .project-building-details .building-details-footer {
-    height: 400px;
+    height: auto;
     padding-left: 2rem;
     padding-top: 2rem;
+  }
+  .project-building-section .project-building-details .building-details-footer .h-100 {
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+  }
+  .project-building-section .project-building-details .building-details-footer .h-100 img {
+    height: 90%;
   }
   .project-building-section .project-building-details .building-details-footer p {
     width: 100%;

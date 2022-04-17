@@ -36,11 +36,11 @@ $(document).ready(function(){
     i=dataTab;
     
     $('.dotCircle').css({
-      "transform":"rotate("+(360-(i-1)*36)+"deg)",
+      "transform":"rotate("+(360-(i-1)*39)+"deg)",
       "transition":"2s"
     });
     $('.itemDot').css({
-      "transform":"rotate("+((i-1)*36)+"deg)",
+      "transform":"rotate("+((i-1)*39)+"deg)",
       "transition":"1s"
     })
     

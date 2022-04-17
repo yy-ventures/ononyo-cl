@@ -109,7 +109,7 @@
 	}
 	.dotCircle  .itemDot1::before{
 		border-color:#302F30;
-		content: "2021";
+		content: "2025";
 		color: #302F30;
 		top: -100%;
 		right: -250%;
@@ -124,7 +124,7 @@
 	}
 	.dotCircle  .itemDot2::before{	
 		border-color:#302F30;
-		content: "2020";
+		content: "2024";
 		color: #302F30;
 		top: -100%;
 		right: -250%;
@@ -139,7 +139,7 @@
 	
 	.dotCircle  .itemDot3::before{
 		border-color:#302F30;
-		content: "2019";
+		content: "2021";
 		color: #302F30;
 		top: -100%;
 		right: -250%;
@@ -154,7 +154,7 @@
 	
 	.dotCircle  .itemDot4::before{
 		border-color:#302F30;
-		content: "2017";
+		content: "2020";
 		color: #302F30;
 		top: -100%;
 		right: -250%;
@@ -170,7 +170,7 @@
 	
 	.dotCircle  .itemDot5::before{	
 		border-color:#302F30;
-		content: "2016";
+		content: "2019";
 		color: #302F30;
 		top: -100%;
 		right: -250%;
@@ -186,7 +186,7 @@
 
 	.dotCircle  .itemDot6::before{	
 		border-color:#302F30;
-		content: "2015";
+		content: "2017";
 		color: #302F30;
 		top: -100%;
 		right: -250%;
@@ -201,7 +201,7 @@
 
 	.dotCircle  .itemDot7::before{
 		border-color:#302F30;
-		content: "2014";
+		content: "2015";
 		color: #302F30;
 		top: -100%;
 		right: -250%;
@@ -217,7 +217,7 @@
 
 	.dotCircle  .itemDot8::before{	
 		border-color:#302F30;
-		content: "2013";
+		content: "2014";
 		color: #302F30;
 		top: -100%;
 		right: -250%;
